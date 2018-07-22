@@ -16,16 +16,16 @@ services:
     depends_on:
       - db
     ports:
-      - "8087:8069"
+      - "8100:8069"
     tty: true
     command: -- --dev=reload
 #    command: odoo scaffold /mnt/extra-addons/test_module
     environment:
       - VIRTUAL_PORT=8069
 #     - HTTPS_METHOD=nohttps
-      - VIRTUAL_HOST=divadlovkufru.dravom.cz
-      - LETSENCRYPT_HOST=divadlovkufru.dravom.cz
-      - LETSENCRYPT_EMAIL=milda.dvorak@gmail.com
+      - VIRTUAL_HOST=odoo.mykkro.cz
+      - LETSENCRYPT_HOST=odoo.mykkro.cz
+      - LETSENCRYPT_EMAIL=myrousz@gmail.com
     volumes:
       - ./o_addons:/mnt/extra-addons
       - ./o_etc:/etc/odoo

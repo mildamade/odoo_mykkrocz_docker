@@ -1,5 +1,5 @@
 export PGPASSWORD="odoo" 
-docker exec -i odoodivadlovkufrudocker_odoo11_1 /bin/bash -c \
+docker exec -i odoomykkroczdocker_odoo11_1 /bin/bash -c \
 "export PGPASSWORD="odoo" \
-&& /usr/bin/pg_dump --host=7203f6f54346 --dbname=DIVADLOVKUFRU --username=odoo" \
-> ./divadlovkufru_postgresql.dump
+&& /usr/bin/pg_dump --host=685300d5b1be --dbname=MYKKRO --username=odoo" \
+> /data/odoo_backup_db/mykkrocz_postgresql.dump
